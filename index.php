@@ -11,8 +11,20 @@
 <body>
 
     <div>
-        test
+        <?php
+        include 'db_connection.php';
+
+
+
+        // Print EVENTI DB
+        // $eventi = mysqli_query($conn, "SELECT * FROM eventi");
+        // while ($row = mysqli_fetch_assoc($eventi)) {
+        //     echo $row["id"] . " - " . $row["attendees"] . " - " . $row["nome_evento"] . "<br>";
+        // }
+        // mysqli_close($conn);
+        ?>
     </div>
+
 
 </body>
 
