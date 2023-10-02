@@ -9,19 +9,21 @@
 </head>
 
 <body>
-
     <div>
+        <h2>Login</h2>
+
+        <form action="sql.php" method="post">
+            Email: <input type="email" name="email" required><br><br>
+            Password: <input type="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+
+        <!-- Link alla pagina di registrazione -->
+        <p>Non hai un profilo? <a href="registration.php">Registrati</a></p>
         <?php
         include 'db_connection.php';
+        include 'sql.php';
 
-
-
-        // Print EVENTI DB
-        // $eventi = mysqli_query($conn, "SELECT * FROM eventi");
-        // while ($row = mysqli_fetch_assoc($eventi)) {
-        //     echo $row["id"] . " - " . $row["attendees"] . " - " . $row["nome_evento"] . "<br>";
-        // }
-        // mysqli_close($conn);
         ?>
     </div>
 
