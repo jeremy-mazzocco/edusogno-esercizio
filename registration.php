@@ -21,7 +21,6 @@
     <p>Hai già un account? <a href="index.php">Accedi</a></p>
     <?php
     include 'db_connection.php';
-    include 'sql.php';
 
     ?>
 </body>

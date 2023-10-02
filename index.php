@@ -22,7 +22,6 @@
         <p>Non hai un profilo? <a href="registration.php">Registrati</a></p>
         <?php
         include 'db_connection.php';
-        include 'sql.php';
 
         ?>
     </div>
