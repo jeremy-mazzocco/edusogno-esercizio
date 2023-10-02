@@ -18,9 +18,11 @@
 
         <form action="sql_login.php" method="post">
             Email: <input type="email" name="email" required><br><br>
-            Password: <input type="password" name="password" required><br><br>
+            <!-- <div  id="email-message"></div> -->
+            Password: <input  type="password" name="password" required><br><br>
+            <!-- <div id="password-message"></div> -->
             <input type="submit" value="Login">
-        </form>
+        </form> 
 
         <p>Non hai un profilo? <a href="registration.php">Registrati</a></p>
     </div>

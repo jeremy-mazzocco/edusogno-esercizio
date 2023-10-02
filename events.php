@@ -10,12 +10,21 @@
 
 <body>
     <div>
-        <?php
-        include 'db_connection.php';
-        ?>
+        <?php session_start(); ?>
+
         <h2>
-            qui gli eventi
+            <?php echo 'Ciao ' . $_SESSION['username'] . ' ' . $_SESSION['lastname'] . 'ecco i tuoi eventi' ?>
         </h2>
+
+        <div>
+            <?php
+
+            foreach ($_SESSION['events'] as $card_event) {
+                echo "<h3>" . $card_event . "</h3>";
+            }
+
+            ?>
+        </div>
     </div>
 
 
