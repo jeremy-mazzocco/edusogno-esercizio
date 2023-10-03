@@ -29,10 +29,10 @@ $events = $eventController->getAllEvents();
                 <div>Data evento: <?php echo $event->getDataEvento(); ?></div>
                 <div>Partecipanti: <?php echo $event->getAttendees(); ?></div>
                 <div><a href="edit_event.php?id=<?php echo $event->getId(); ?>">Modifica</a></div>
+                <div><a href="delete_event.php?id=<?php echo $event->getId(); ?>">Elimina</a></div>
             </div>
         <?php endforeach; ?>
     </div>
-
 
 </body>
 

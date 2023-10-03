@@ -57,4 +57,18 @@ class EventController
 
         return $stmt->execute();
     }
+
+    // delete
+    public function deleteEvent($id)
+    {
+        $sql = "DELETE FROM eventi WHERE id = ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bind_param("i", $id);
+
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
