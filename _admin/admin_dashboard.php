@@ -19,20 +19,20 @@ $events = $eventController->getAllEvents();
 <body>
 
     <h1>Eventi</h1>
-    <a href="
-    add_event.php">Aggiungi evento</a>
+    <a href="add_event.php">Aggiungi evento</a>
 
     <div>
         <?php foreach ($events as $event) : ?>
             <div>
                 <div>ID: <?php echo $event->getId(); ?></div>
-                <div>Nome: <?php echo $event->getNomeEvento(); ?></div>
-                <div>Data: <?php echo $event->getDataEvento(); ?></div>
+                <div>Nome evento: <?php echo $event->getNomeEvento(); ?></div>
+                <div>Data evento: <?php echo $event->getDataEvento(); ?></div>
                 <div>Partecipanti: <?php echo $event->getAttendees(); ?></div>
-
+                <div><a href="edit_event.php?id=<?php echo $event->getId(); ?>">Modifica</a></div>
             </div>
         <?php endforeach; ?>
     </div>
+
 
 </body>
 
