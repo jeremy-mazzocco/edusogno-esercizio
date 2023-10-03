@@ -13,17 +13,19 @@
         <?php session_start(); ?>
 
         <h2>
-            <?php echo 'Ciao ' . $_SESSION['username'] . ' ' . $_SESSION['lastname'] . 'ecco i tuoi eventi' ?>
+            <?php echo 'Ciao ' . $_SESSION['username'] . ' ' . $_SESSION['lastname'] . ' ' . 'ecco i tuoi eventi' ?>
         </h2>
 
         <div>
-            <?php
+            <ul>
+                <?php
+                foreach ($_SESSION['events'] as $card_event) {
+                    echo "<li>" . $card_event . "</li>";
+                }
+                ?>
 
-            foreach ($_SESSION['events'] as $card_event) {
-                echo "<h3>" . $card_event . "</h3>";
-            }
+            </ul>
 
-            ?>
         </div>
     </div>
 

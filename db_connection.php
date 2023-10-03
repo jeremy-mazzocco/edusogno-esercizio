@@ -8,6 +8,6 @@ $dbname = "db-edusogno";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
-    die("Connessione fallita: " . mysqli_connect_error());
+    die("Failed to connect to MySQL: " . mysqli_connect_error());
 }
 ?>

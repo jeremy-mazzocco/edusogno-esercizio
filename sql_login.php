@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 include 'db_connection.php';
 
@@ -25,27 +25,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['lastname'] = $user['cognome'];
             $_SESSION['email'] = $user['email'];
 
-            // soluzione va bene ma ricordati di mettere una validation nel regitrare l'utente            
+            // soluzione ok ma ricordati di mettere una validation nella regitrare l'utente 
             $sql_events = "SELECT nome_evento FROM eventi WHERE attendees LIKE '%$email%'";
             $result_events = mysqli_query($conn, $sql_events);
-            if ($result_events) {
+
                 while ($event = mysqli_fetch_assoc($result_events)) {
                     $events[] = $event['nome_evento'];
                 };
-            } else {
-                // ricordati di mettere qualcosa
-            };
 
-            $_SESSION['events'] = $events;
+                $_SESSION['events'] = $events;
 
-            header('Location: events.php');
-            exit;
+        };
 
-        } else {
-            echo "<div>'Password errata!'</div>";
-        }
+        header('Location: events.php');
+        exit;
+
     } else {
-        echo "<div>'Utente non trovato!'</div>";
+        echo "<div>'Password errata!'</div>";
     }
+} else {
+    echo "<div>'Utente non trovato!'</div>";
 }
+
 mysqli_close($conn);
