@@ -13,6 +13,7 @@
     <form action="send_reset_link.php" method="post">
         Email: <input type="email" name="user_email" required>
         <input type="submit" value="Resetta password">
+        <p>Torna alla <a href="index.php">Login</a></p>
     </form>
 
 </body>
