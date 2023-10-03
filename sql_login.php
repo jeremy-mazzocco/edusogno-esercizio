@@ -1,19 +1,18 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 
 include 'db_connection.php';
 
 // Login
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
+    $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
+    $password = $_REQUEST['password'];
 
-        $email = $_REQUEST['email'];
-        $password = $_REQUEST['password'];
+    $sql_email = "SELECT * FROM utenti WHERE email = '$email'";
+    $result_email = mysqli_query($conn, $sql_email);
 
-        $sql_email = "SELECT * FROM utenti WHERE email = '$email'";
-        $result_email = mysqli_query($conn, $sql_email);
+    // Verifica se la query ha restituito un risultato
+    if (mysqli_num_rows($result_email) > 0) {
         $user = mysqli_fetch_assoc($result_email);
 
         if (password_verify($password, $user['password'])) {
@@ -25,26 +24,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['lastname'] = $user['cognome'];
             $_SESSION['email'] = $user['email'];
 
-            // soluzione ok ma ricordati di mettere una validation nella regitrare l'utente 
             $sql_events = "SELECT nome_evento FROM eventi WHERE attendees LIKE '%$email%'";
             $result_events = mysqli_query($conn, $sql_events);
 
-                while ($event = mysqli_fetch_assoc($result_events)) {
-                    $events[] = $event['nome_evento'];
-                };
+            while ($event = mysqli_fetch_assoc($result_events)) {
+                $events[] = $event['nome_evento'];
+            };
 
-                $_SESSION['events'] = $events;
+            $_SESSION['events'] = $events;
 
-        };
+            header('Location: events.php');
+            exit;
 
-        header('Location: events.php');
-        exit;
-
+        } else {
+            echo "<div>Password errata!</div>";
+        }
     } else {
-        echo "<div>'Password errata!'</div>";
+        echo "<div>Utente non trovato!</div>";
     }
-} else {
-    echo "<div>'Utente non trovato!'</div>";
 }
 
 mysqli_close($conn);

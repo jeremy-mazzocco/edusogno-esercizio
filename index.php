@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edusogno</title>
+    <title>Login</title>
 </head>
 
 <body>
-    <div>
-        <?php
-        include 'db_connection.php';
-        ?>
 
+    <div>
         <h2>Login</h2>
 
         <form action="sql_login.php" method="post">
@@ -24,10 +21,7 @@
 
         <p>Non hai un profilo? <a href="registration.php">Registrati</a></p>
         <p>Hai dimenticato la tua password? <a href="request_reset.php">Resetta password</a></p>
-
-
     </div>
-
 
 </body>
 
