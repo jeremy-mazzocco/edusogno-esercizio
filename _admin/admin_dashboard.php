@@ -19,6 +19,8 @@ $events = $eventController->getAllEvents();
 <body>
 
     <h1>Eventi</h1>
+    <a href="
+    add_event.php">Aggiungi evento</a>
 
     <div>
         <?php foreach ($events as $event) : ?>
