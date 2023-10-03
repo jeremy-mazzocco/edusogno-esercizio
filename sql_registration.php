@@ -17,7 +17,7 @@
         $checkEmail = "SELECT email FROM utenti WHERE email = '$email'";
         $result = mysqli_query($conn, $checkEmail);
 
-        // extra: controlla se la mail é giá registrato
+        // extra: controlla se la email é giá registrata
         if (mysqli_num_rows($result) > 0) {
             $_SESSION['message'] = "Email già registrata. Prova con un'altra e-mail.";
         } else {
