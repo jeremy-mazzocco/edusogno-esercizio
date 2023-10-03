@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql_email = "SELECT * FROM utenti WHERE email = '$email'";
     $result_email = mysqli_query($conn, $sql_email);
 
-    // Verifica se la query ha restituito un risultato
     if (mysqli_num_rows($result_email) > 0) {
         $user = mysqli_fetch_assoc($result_email);
 
