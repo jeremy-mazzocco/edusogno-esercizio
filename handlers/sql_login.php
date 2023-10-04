@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['lastname'] = $user['cognome'];
             $_SESSION['email'] = $user['email'];
 
-
+            // selezione nome evento e attendees
             $sql_events = "SELECT nome_evento, attendees FROM eventi";
             $result_events = mysqli_query($conn, $sql_events);
 
