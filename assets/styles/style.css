@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700");
+@import url("https://api.fontshare.com/css?f[]=dm sans@400,700&display=swap");
+
+p,
+ol,
+ul {
+    margin: 0px;
+}
+
+button {
+    padding: 0px;
+}
+
+ol,
+ul {
+    padding-inline-start: 1.5em;
+}
+
+.registrazione-box_143171x {
+    margin: auto;
+    justify-content: space-between;
+    gap: 97px;
+    width: 1440px;
+    height: 1024px;
+    box-sizing: border-box;
+    background-color: rgba(116, 223, 213, 1);
+    display: flex;
+    font-family: DM Sans;
+}
+
+.registrazione-rectangle-2x {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(217, 229, 243, 1);
+    position: relative;
+    padding-top: 549px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.registrazione-layout-32 {
+    height: 100%;
+}
+
+.registrazione-vector-4x-1 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(184, 204, 228, 1);
+    position: relative;
+    padding-bottom: 94px;
+    padding-top: 155px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.registrazione-vector-4x {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.registrazione-layout-33 {
+    height: 100%;
+}
+
+.registrazione-vector-5x-1 {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    padding-right: 192px;
+    padding-left: 1175px;
+    padding-bottom: 26px;
+    padding-top: 83px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.registrazione-vector-5x {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.registrazione-hai-gi-un-account {
+    color: rgba(45, 34, 76, 1);
+    width: 166px;
+    height: 13px;
+    line-height: 1;
+    text-align: center;
+    top: 105px;
+    left: 636px;
+    position: absolute;
+}
+
+.registrazione-hai-gi-un-account-text-0x {
+    display: inline;
+    text-decoration: underline;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.registrazione-accedi-text-1x {
+    display: inline;
+    text-decoration: underline;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-registrati {
+    width: 111px;
+    height: 20px;
+    right: 646px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+}
+
+.registrazione-box_174179x {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    gap: 4px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.registrazione-polygon-1x {
+    box-sizing: border-box;
+    height: 84px;
+    width: 73px;
+}
+
+.registrazione-ellipse-11x {
+    border-radius: 9999px;
+    background-color: rgba(217, 229, 243, 1);
+    box-sizing: border-box;
+    height: 29px;
+    width: 29px;
+}
+
+.registrazione-layout-34 {
+    width: 100%;
+}
+
+.registrazione-vector-1x-1 {
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+    right: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    left: 0;
+    position: absolute;
+    padding-right: 173px;
+    padding-left: 1156px;
+    padding-bottom: 52px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    height: 128px;
+    width: 1440px;
+}
+
+.registrazione-vector-1x {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.registrazione-box_176178177x {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 33px;
+    box-sizing: border-box;
+}
+
+.registrazione-vector-2x {
+    box-sizing: border-box;
+    height: 58px;
+    width: 20px;
+}
+
+.registrazione-rectangle-1084x {
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    height: 56px;
+    width: 5px;
+}
+
+.registrazione-vector-3x {
+    box-sizing: border-box;
+    height: 58px;
+    width: 20px;
+}
+
+.registrazione-layout-35 {
+    width: 100%;
+}
+
+.registrazione-rectangle-1083x {
+    bottom: 78px;
+    right: 197px;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-bottom: 42px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    height: 96px;
+    width: 63px;
+}
+
+.registrazione-ellipse-11x-1 {
+    border-radius: 9999px;
+    background-color: rgba(217, 229, 243, 1);
+    box-sizing: border-box;
+    height: 29px;
+    width: 29px;
+}
+
+.registrazione-layout-36 {
+    width: 100%;
+}
+
+.registrazione-rectangle-1x {
+    border-radius: 13px;
+    padding-right: 1266px;
+    padding-bottom: 32px;
+    padding-left: 51px;
+    padding-top: 42px;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    box-shadow-width: 0;
+    box-shadow: 0px 0px 0px 0px black inset;
+    background-color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0px 4px 18px -6px rgba(0, 87, 255, 1));
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+    height: 127px;
+    width: 1440px;
+}
+
+.registrazione-group-181x {
+    width: 123px;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.registrazione-layout-37 {
+    width: 100%;
+}
+
+.registrazione-rectangle-9x {
+    border-radius: 19px;
+    padding-right: 47px;
+    padding-bottom: 103px;
+    padding-left: 36px;
+    padding-top: 46px;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 161px;
+    right: 0;
+    box-shadow: 0px 0px 0px 1px rgba(19, 64, 119, 1) inset;
+    background-color: rgba(255, 255, 255, 1);
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+    height: 604px;
+    width: 662px;
+}
+
+.registrazione-box_161164166186187188182183184162box_165168167169x {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.registrazione-inserisci-il-nome {
+    width: 103px;
+    height: 13px;
+    color: rgba(35, 31, 32, 1);
+    text-align: center;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-mario {
+    width: 52px;
+    height: 20px;
+    margin-top: 11px;
+    color: rgba(204, 204, 204, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+}
+
+.registrazione-line-1x {
+    outline-color: rgba(45, 34, 76, 1);
+    outline-width: 1px;
+    outline-style: solid;
+    box-sizing: border-box;
+    height: 0;
+    width: 579px;
+}
+
+.registrazione-inserisci-il-cognome {
+    width: 126px;
+    height: 13px;
+    margin-top: 25px;
+    color: rgba(35, 31, 32, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-rossi {
+    width: 48px;
+    height: 20px;
+    margin-top: 11px;
+    color: rgba(204, 204, 204, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+}
+
+.registrazione-line-4x {
+    outline-color: rgba(45, 34, 76, 1);
+    outline-width: 1px;
+    outline-style: solid;
+    box-sizing: border-box;
+    height: 0;
+    width: 579px;
+}
+
+.registrazione-inserisci-lemail {
+    width: 99px;
+    height: 13px;
+    margin-top: 18px;
+    color: rgba(35, 31, 32, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-name-example-com {
+    width: 195px;
+    height: 20px;
+    margin-top: 11px;
+    color: rgba(204, 204, 204, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+}
+
+.registrazione-line-3x {
+    outline-color: rgba(45, 34, 76, 1);
+    outline-width: 1px;
+    outline-style: solid;
+    box-sizing: border-box;
+    height: 0;
+    width: 579px;
+}
+
+.registrazione-inserisci-la-passwor {
+    width: 133px;
+    height: 13px;
+    margin-top: 24px;
+    color: rgba(35, 31, 32, 1);
+    text-align: left;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-box_165168x {
+    font-weight: 400;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+    margin-top: 11px;
+    justify-content: space-between;
+    display: flex;
+    gap: 441px;
+    box-sizing: border-box;
+    height: 20px;
+    width: 566px;
+}
+
+.registrazione-scrivila-qui {
+    flex-grow: 1;
+    width: 101px;
+    height: 20px;
+    line-height: 1;
+    font-size: 20px;
+    border: none;
+    color: rgba(204, 204, 204, 1);
+}
+
+.registrazione-vector {
+    box-sizing: border-box;
+    height: 17px;
+    width: 25px;
+}
+
+.registrazione-line-2x {
+    outline-color: rgba(45, 34, 76, 1);
+    outline-width: 1px;
+    outline-style: solid;
+    box-sizing: border-box;
+    height: 0;
+    width: 579px;
+}
+
+.registrazione-rectangle-10x {
+    font-weight: 700;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 11px;
+    margin-top: 57px;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    background-color: rgba(0, 87, 255, 1);
+    padding-right: 210px;
+    padding-left: 256px;
+    padding-bottom: 22px;
+    padding-top: 17px;
+    box-sizing: border-box;
+    width: 577px;
+}
+
+.registrazione-registrati-1 {
+    line-height: 1;
+    font-size: 20px;
+    background-color: rgba(0, 87, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+.registrazione-hai-gi-un-account-1 {
+    color: rgba(45, 34, 76, 1);
+    width: 166px;
+    height: 13px;
+    bottom: 41px;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    left: 247px;
+    position: absolute;
+}
+
+.registrazione-hai-gi-un-account-text-0x-1 {
+    display: inline;
+    text-decoration: underline;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.registrazione-accedi-text-1x-1 {
+    display: inline;
+    text-decoration: underline;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.registrazione-layout-38 {
+    font-weight: 700;
+    color: rgba(19, 64, 119, 1);
+    text-align: center;
+}
+
+.registrazione-crea-il-tuo-account {
+    width: 298px;
+    height: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    line-height: 1;
+    font-size: 32px;
+    position: absolute;
+    top: 205px;
+    left: 0;
+}
+
+.registrazione-layout-39 {
+    width: 100%;
+}
+
+.registrazione-ellipse-12x {
+    bottom: 399px;
+    right: 33px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    box-sizing: border-box;
+    height: 181px;
+    width: 181px;
+}
+
+.registrazione-layout-2 {
+    width: 100%;
+}
+
+.registrazione-ellipse-13x {
+    position: absolute;
+    top: 318px;
+    left: 0;
+    box-sizing: border-box;
+    height: 358px;
+    width: 180px;
+}
+
+.registrazione-rectangle-1x-1 {
+    border-radius: 13px;
+    box-shadow-width: 0;
+    box-shadow: 0px 0px 0px 0px black inset;
+    background-color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0px 4px 18px -6px rgba(45, 34, 76, 1));
+    box-sizing: border-box;
+    height: 127px;
+    width: 0;
+}

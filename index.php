@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    
+    <title>Log-in</title>
 </head>
 
 <body>
-
-    <div>
+    
         <h2>Login</h2> <a href="./views/admin/admin_dashboard.php">Vai all'area Admin</a>
 
         <form action="./handlers/login_handlers.php" method="post">
@@ -21,7 +24,13 @@
 
         <p>Non hai un profilo? <a href="./views/registration.php">Registrati</a></p>
         <p>Hai dimenticato la tua password? <a href="./views/request_reset.php">Resetta password</a></p>
-    </div>
+   
+
+
+
+
+
+
 
 </body>
 
