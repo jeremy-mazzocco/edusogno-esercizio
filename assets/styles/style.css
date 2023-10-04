@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700");
-@import url("https://api.fontshare.com/css?f[]=dm sans@400,700&display=swap");
 
 p,
 ol,
@@ -7,16 +6,12 @@ ul {
     margin: 0px;
 }
 
-button {
-    padding: 0px;
-}
-
 ol,
 ul {
     padding-inline-start: 1.5em;
 }
 
-.registrazione-box_143171x {
+.main {
     margin: auto;
     justify-content: space-between;
     gap: 97px;
@@ -28,7 +23,7 @@ ul {
     font-family: DM Sans;
 }
 
-.registrazione-rectangle-2x {
+.container {
     flex-grow: 1;
     justify-content: center;
     display: flex;
@@ -39,11 +34,19 @@ ul {
     height: 100%;
 }
 
-.registrazione-layout-32 {
+.layout-33,
+.layout-32 {
     height: 100%;
 }
 
-.registrazione-vector-4x-1 {
+.layout-39,
+.layout-2,
+.layout-37,
+.layout-36 {
+    width: 100%;
+}
+
+.vector-4 {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -55,7 +58,7 @@ ul {
     height: 100%;
 }
 
-.registrazione-vector-4x {
+.vector-41 {
     bottom: 0;
     top: 0;
     right: 0;
@@ -64,11 +67,9 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-layout-33 {
-    height: 100%;
-}
 
-.registrazione-vector-5x-1 {
+
+.vector-51 {
     width: 100%;
     align-items: flex-end;
     justify-content: flex-end;
@@ -82,7 +83,7 @@ ul {
     height: 100%;
 }
 
-.registrazione-vector-5x {
+.vector-5 {
     bottom: 0;
     top: 0;
     right: 0;
@@ -91,9 +92,9 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-hai-gi-un-account {
+.hai-gi-un-account {
     color: rgba(45, 34, 76, 1);
-    width: 166px;
+    width: 200px;
     height: 13px;
     line-height: 1;
     text-align: center;
@@ -102,7 +103,7 @@ ul {
     position: absolute;
 }
 
-.registrazione-hai-gi-un-account-text-0x {
+.hai-gi-un-account-text-0x {
     display: inline;
     text-decoration: underline;
     line-height: 1;
@@ -110,7 +111,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-accedi-text-1x {
+.accedi-text-1x {
     display: inline;
     text-decoration: underline;
     line-height: 1;
@@ -118,7 +119,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-registrati {
+.registrati {
     width: 111px;
     height: 20px;
     right: 646px;
@@ -131,7 +132,7 @@ ul {
     top: 14px;
 }
 
-.registrazione-box_174179x {
+.box_6 {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -143,13 +144,13 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-polygon-1x {
+.polygon-1x {
     box-sizing: border-box;
     height: 84px;
     width: 73px;
 }
 
-.registrazione-ellipse-11x {
+.ellipse-1 {
     border-radius: 9999px;
     background-color: rgba(217, 229, 243, 1);
     box-sizing: border-box;
@@ -157,11 +158,7 @@ ul {
     width: 29px;
 }
 
-.registrazione-layout-34 {
-    width: 100%;
-}
-
-.registrazione-vector-1x-1 {
+.vector-11 {
     margin-right: auto;
     margin-left: auto;
     bottom: 0;
@@ -180,7 +177,7 @@ ul {
     width: 1440px;
 }
 
-.registrazione-vector-1x {
+.vector-1 {
     bottom: 0;
     top: 0;
     right: 0;
@@ -189,7 +186,7 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-box_176178177x {
+.box_17 {
     width: 100%;
     height: 100%;
     position: relative;
@@ -199,30 +196,35 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-vector-2x {
+.vector-2x {
     box-sizing: border-box;
     height: 58px;
     width: 20px;
 }
 
-.registrazione-rectangle-1084x {
+.rectangle-4 {
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
     height: 56px;
     width: 5px;
 }
 
-.registrazione-vector-3x {
+.vector-3 {
     box-sizing: border-box;
     height: 58px;
     width: 20px;
 }
 
-.registrazione-layout-35 {
+.layout-35 {
     width: 100%;
 }
 
-.registrazione-rectangle-1083x {
+.layout-34 {
+    width: 100%;
+}
+
+
+.rectangle-3 {
     bottom: 78px;
     right: 197px;
     justify-content: center;
@@ -238,7 +240,7 @@ ul {
     width: 63px;
 }
 
-.registrazione-ellipse-11x-1 {
+.ellipse-11 {
     border-radius: 9999px;
     background-color: rgba(217, 229, 243, 1);
     box-sizing: border-box;
@@ -246,11 +248,7 @@ ul {
     width: 29px;
 }
 
-.registrazione-layout-36 {
-    width: 100%;
-}
-
-.registrazione-rectangle-1x {
+.rectangle-1 {
     border-radius: 13px;
     padding-right: 1266px;
     padding-bottom: 32px;
@@ -271,17 +269,13 @@ ul {
     width: 1440px;
 }
 
-.registrazione-group-181x {
+.group-1 {
     width: 123px;
     height: 52px;
     box-sizing: border-box;
 }
 
-.registrazione-layout-37 {
-    width: 100%;
-}
-
-.registrazione-rectangle-9x {
+.rectangle-9 {
     border-radius: 19px;
     padding-right: 47px;
     padding-bottom: 103px;
@@ -296,11 +290,14 @@ ul {
     left: 0;
     position: absolute;
     box-sizing: border-box;
-    height: 604px;
     width: 662px;
 }
 
-.registrazione-box_161164166186187188182183184162box_165168167169x {
+#accedi-rectangle-9 {
+    bottom: 291px;
+}
+
+.box_16 {
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -309,7 +306,7 @@ ul {
     box-sizing: border-box;
 }
 
-.registrazione-inserisci-il-nome {
+.inserisci-il-nome {
     width: 103px;
     height: 13px;
     color: rgba(35, 31, 32, 1);
@@ -319,8 +316,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-mario {
-    width: 52px;
+.mario {
     height: 20px;
     margin-top: 11px;
     color: rgba(204, 204, 204, 1);
@@ -331,7 +327,7 @@ ul {
     border: none;
 }
 
-.registrazione-line-1x {
+.line-1x {
     outline-color: rgba(45, 34, 76, 1);
     outline-width: 1px;
     outline-style: solid;
@@ -340,7 +336,7 @@ ul {
     width: 579px;
 }
 
-.registrazione-inserisci-il-cognome {
+.inserisci-il-cognome {
     width: 126px;
     height: 13px;
     margin-top: 25px;
@@ -351,8 +347,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-rossi {
-    width: 48px;
+.rossi {
     height: 20px;
     margin-top: 11px;
     color: rgba(204, 204, 204, 1);
@@ -363,7 +358,7 @@ ul {
     border: none;
 }
 
-.registrazione-line-4x {
+.line-4x {
     outline-color: rgba(45, 34, 76, 1);
     outline-width: 1px;
     outline-style: solid;
@@ -372,7 +367,7 @@ ul {
     width: 579px;
 }
 
-.registrazione-inserisci-lemail {
+.inserisci-lemail {
     width: 99px;
     height: 13px;
     margin-top: 18px;
@@ -383,8 +378,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-name-example-com {
-    width: 195px;
+.name-example-com {
     height: 20px;
     margin-top: 11px;
     color: rgba(204, 204, 204, 1);
@@ -395,7 +389,7 @@ ul {
     border: none;
 }
 
-.registrazione-line-3x {
+.line-3x {
     outline-color: rgba(45, 34, 76, 1);
     outline-width: 1px;
     outline-style: solid;
@@ -404,7 +398,7 @@ ul {
     width: 579px;
 }
 
-.registrazione-inserisci-la-passwor {
+.inserisci-la-password {
     width: 133px;
     height: 13px;
     margin-top: 24px;
@@ -415,7 +409,7 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-box_165168x {
+.box_1 {
     font-weight: 400;
     text-align: left;
     color: rgba(204, 204, 204, 1);
@@ -428,9 +422,9 @@ ul {
     width: 566px;
 }
 
-.registrazione-scrivila-qui {
+.scrivila-qui {
     flex-grow: 1;
-    width: 101px;
+
     height: 20px;
     line-height: 1;
     font-size: 20px;
@@ -438,13 +432,13 @@ ul {
     color: rgba(204, 204, 204, 1);
 }
 
-.registrazione-vector {
+.vector {
     box-sizing: border-box;
     height: 17px;
     width: 25px;
 }
 
-.registrazione-line-2x {
+.line-2x {
     outline-color: rgba(45, 34, 76, 1);
     outline-width: 1px;
     outline-style: solid;
@@ -453,7 +447,7 @@ ul {
     width: 579px;
 }
 
-.registrazione-rectangle-10x {
+.rectangle-10 {
     font-weight: 700;
     text-align: left;
     color: rgba(255, 255, 255, 1);
@@ -472,7 +466,7 @@ ul {
     width: 577px;
 }
 
-.registrazione-registrati-1 {
+.registrati-1 {
     line-height: 1;
     font-size: 20px;
     background-color: rgba(0, 87, 255, 1);
@@ -480,9 +474,9 @@ ul {
     border: none;
 }
 
-.registrazione-hai-gi-un-account-1 {
+.hai-gi-un-account-1 {
     color: rgba(45, 34, 76, 1);
-    width: 166px;
+    width: 200px;
     height: 13px;
     bottom: 41px;
     display: inline-block;
@@ -492,7 +486,7 @@ ul {
     position: absolute;
 }
 
-.registrazione-hai-gi-un-account-text-0x-1 {
+.hai-gi-un-account-text {
     display: inline;
     text-decoration: underline;
     line-height: 1;
@@ -500,7 +494,15 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-accedi-text-1x-1 {
+.accedi-a {
+    display: block;
+    width: 400px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 45%;
+}
+
+.accedi-text-1x-1 {
     display: inline;
     text-decoration: underline;
     line-height: 1;
@@ -508,13 +510,13 @@ ul {
     font-size: 13px;
 }
 
-.registrazione-layout-38 {
+.layout-38 {
     font-weight: 700;
     color: rgba(19, 64, 119, 1);
     text-align: center;
 }
 
-.registrazione-crea-il-tuo-account {
+.crea-il-tuo-account {
     width: 298px;
     height: 32px;
     margin-right: auto;
@@ -527,11 +529,7 @@ ul {
     left: 0;
 }
 
-.registrazione-layout-39 {
-    width: 100%;
-}
-
-.registrazione-ellipse-12x {
+.ellipse-2 {
     bottom: 399px;
     right: 33px;
     border-radius: 9999px;
@@ -542,11 +540,8 @@ ul {
     width: 181px;
 }
 
-.registrazione-layout-2 {
-    width: 100%;
-}
 
-.registrazione-ellipse-13x {
+.ellipse-3 {
     position: absolute;
     top: 318px;
     left: 0;
@@ -555,7 +550,7 @@ ul {
     width: 180px;
 }
 
-.registrazione-rectangle-1x-1 {
+.rectangle-1x-1 {
     border-radius: 13px;
     box-shadow-width: 0;
     box-shadow: 0px 0px 0px 0px black inset;
@@ -564,4 +559,19 @@ ul {
     box-sizing: border-box;
     height: 127px;
     width: 0;
+}
+
+.push-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.push-input:focus,
+.push-input:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
