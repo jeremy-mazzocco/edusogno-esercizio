@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $mail->SMTPSecure = 'tls';
                     $mail->Port       = 2525;
 
-                    $mail->setFrom('from@example.com', 'Mailer');
+                    $mail->setFrom('admin@edusogno.com', 'Admin');
                     $mail->addAddress($email);
 
                     $mail->isHTML(true);

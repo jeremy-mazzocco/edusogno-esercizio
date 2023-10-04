@@ -1,5 +1,4 @@
     <?php
-
     session_start();
 
     include 'db_connection.php';
@@ -17,7 +16,7 @@
         $checkEmail = "SELECT email FROM utenti WHERE email = '$email'";
         $result = mysqli_query($conn, $checkEmail);
 
-        // extra: controlla se la email é giá registrata
+        // bonus: controlla se la email é giá registrata
         if (mysqli_num_rows($result) > 0) {
             $_SESSION['message'] = "Email già registrata. Prova con un'altra e-mail.";
         } else {
@@ -36,10 +35,3 @@
     }
 
     mysqli_close($conn);
-
-
-    // DEBUG
-    // ini_set('display_errors', 1);
-    // error_reporting(E_ALL);
-    // var_dump($nome);
-    ?>

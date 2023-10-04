@@ -1,7 +1,8 @@
 <?php
 
 include '../db_connection.php';
-include './event.php';
+include 'event.php';
+include 'send_email.php';
 
 class EventController
 {
@@ -46,6 +47,14 @@ class EventController
     {
         $sql = "INSERT INTO eventi (attendees, nome_evento, data_evento) VALUES ('$attendees', '$nome_evento', '$data_evento')";
         return $this->conn->query($sql);
+        if ($this->conn->query($sql)) {
+            $subject = "Sei stato invitato a un evento!";
+            $body = "Sei stato aggiunto a " .  $nome_evento . " che avverrá il " . $data_evento;
+            sendEmail($attendees, $subject, $body);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // edit
@@ -55,7 +64,14 @@ class EventController
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param('sssi', $attendees, $nome_evento, $data_evento, $id);
 
-        return $stmt->execute();
+        if ($stmt->execute()) {
+            $subject = "C'è un aggiornamento a un tuo evento";
+            $body = "Il tuo evento " . $nome_evento . " è stato modificato.";
+            sendEmail($attendees, $subject, $body);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // delete

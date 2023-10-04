@@ -23,9 +23,7 @@
                     echo "<li>" . $card_event . "</li>";
                 }
                 ?>
-
             </ul>
-
         </div>
     </div>
 

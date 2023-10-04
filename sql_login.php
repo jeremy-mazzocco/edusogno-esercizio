@@ -23,12 +23,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['lastname'] = $user['cognome'];
             $_SESSION['email'] = $user['email'];
 
-            $sql_events = "SELECT nome_evento FROM eventi WHERE attendees LIKE '%$email%'";
+
+            $sql_events = "SELECT nome_evento, attendees FROM eventi";
             $result_events = mysqli_query($conn, $sql_events);
 
+            $events = [];
+
             while ($event = mysqli_fetch_assoc($result_events)) {
-                $events[] = $event['nome_evento'];
-            };
+                $emailsArray = explode(',', $event['attendees']);
+                $emailsArray = array_map('trim', $emailsArray);
+
+                if (in_array($email, $emailsArray)) {
+                    $events[] = $event['nome_evento'];
+                }
+            }
 
             $_SESSION['events'] = $events;
 
