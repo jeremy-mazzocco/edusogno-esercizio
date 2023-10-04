@@ -11,16 +11,16 @@
 <body>
 
     <div>
-        <h2>Login</h2> <a href="./_admin/admin_dashboard.php">Vai all'area Admin</a>
+        <h2>Login</h2> <a href="./views/admin/admin_dashboard.php">Vai all'area Admin</a>
 
-        <form action="sql_login.php" method="post">
+        <form action="./handlers/login_handlers.php" method="post">
             Email: <input type="email" name="email" required><br><br>
             Password: <input type="password" name="password" required><br><br>
             <input type="submit" value="Login">
         </form>
 
-        <p>Non hai un profilo? <a href="registration.php">Registrati</a></p>
-        <p>Hai dimenticato la tua password? <a href="request_reset.php">Resetta password</a></p>
+        <p>Non hai un profilo? <a href="./views/registration.php">Registrati</a></p>
+        <p>Hai dimenticato la tua password? <a href="./views/request_reset.php">Resetta password</a></p>
     </div>
 
 </body>

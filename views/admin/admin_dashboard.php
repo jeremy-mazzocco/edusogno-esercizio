@@ -1,6 +1,7 @@
 <?php
-include '../db_connection.php';
-include './event_controller.php';
+
+include '../../includes/db_connection.php';
+include '../../includes/event_controller.php';
 
 $eventController = new EventController($conn);
 $events = $eventController->getAllEvents();
@@ -20,7 +21,7 @@ $events = $eventController->getAllEvents();
 
     <h1>Eventi</h1>
     <div>
-        <a href="../index.php">Torna al Login</a>
+        <a href="../../index.php">Torna al Login</a>
     </div>
     <a href="add_event.php">Aggiungi evento</a>
 
@@ -32,7 +33,7 @@ $events = $eventController->getAllEvents();
                 <div>Data evento: <?php echo $event->getDataEvento(); ?></div>
                 <div>Partecipanti: <?php echo $event->getAttendees(); ?></div>
                 <div><a href="edit_event.php?id=<?php echo $event->getId(); ?>">Modifica</a></div>
-                <div><a href="delete_event.php?id=<?php echo $event->getId(); ?>">Elimina</a></div>
+                <div><a href="../../handlers/admin/delete_event.php?id=<?php echo $event->getId(); ?>">Elimina</a></div>
             </div>
         <?php endforeach; ?>
     </div>

@@ -1,8 +1,9 @@
 <?php
 
-include '../db_connection.php';
+include 'db_connection.php';
 include 'event.php';
-include 'send_email.php';
+include(__DIR__ . '/../handlers/admin/send_email.php');
+
 
 class EventController
 {
@@ -23,7 +24,6 @@ class EventController
             $event = new Event($row['id'], $row['attendees'], $row['nome_evento'], $row['data_evento']);
             $events[] = $event;
         }
-
         return $events;
     }
 
@@ -38,7 +38,6 @@ class EventController
         if ($row = $result->fetch_assoc()) {
             return new Event($row['id'], $row['attendees'], $row['nome_evento'], $row['data_evento']);
         }
-
         return null;
     }
 
@@ -65,8 +64,8 @@ class EventController
         $stmt->bind_param('sssi', $attendees, $nome_evento, $data_evento, $id);
 
         if ($stmt->execute()) {
-            $subject = "C'è un aggiornamento a un tuo evento";
-            $body = "Il tuo evento " . $nome_evento . " è stato modificato.";
+            $subject = "Un aggiornamento a un tuo evento";
+            $body = "L'evento " . $nome_evento . " ha subito una modifica.";
             sendEmail($attendees, $subject, $body);
             return true;
         } else {

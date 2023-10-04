@@ -3,8 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-include 'db_connection.php';
-require 'vendor/autoload.php';
+include '../includes/db_connection.php';
+require '../vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql_token = "UPDATE utenti SET reset_token='$token' WHERE email='$email'";
             if (mysqli_query($conn, $sql_token)) {
 
-                $reset_link = "http://localhost/Edusogno/edusogno-esercizio/reset_password.php?token=$token";
+                $reset_link = "http://localhost/Edusogno/edusogno-esercizio/views/reset_password.php?token=$token";
 
                 // ho usato PHPmail
                 $mail = new PHPMailer(true);
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     $mail->send();
                     echo 'Messaggio inviato con successo. Controlla la tua email.' . '<br>' .
-                        '<p><a href="index.php">Vai alla pagina di Login</a></p>';
+                        '<p><a href="../index.php">Vai alla pagina di Login</a></p>';
                 } catch (Exception $e) {
                     echo "Errore nell'invio del messaggio: {$mail->ErrorInfo}";
                 }

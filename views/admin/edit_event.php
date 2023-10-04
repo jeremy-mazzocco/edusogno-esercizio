@@ -1,6 +1,6 @@
 <?php
-include '../db_connection.php';
-include './event_controller.php';
+include '../../includes/db_connection.php';
+include '../../includes/event_controller.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $eventController = new EventController($conn);

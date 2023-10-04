@@ -1,7 +1,8 @@
 <?php
 
-include '../db_connection.php';
-include './event_controller.php';
+include '../../includes/db_connection.php';
+include '../../includes/event_controller.php';
+// include '../../views/admin/add_event.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $eventController = new EventController($conn);
@@ -12,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data_evento = $_POST['data_evento'];
 
     if ($eventController->addEvent($attendees, $nome_evento, $data_evento)) {
-        header("Location: admin_dashboard.php");
+        header("Location: ../../views/admin/admin_dashboard.php");
         exit;
     } else {
         echo "Errore nell'aggiunta dell'evento." . '<br>' . '<a href="
-        add_event.php">Torna al form</a>';
+        ../../views/admin/add_event.php">Torna al form</a>';
     }
 }
 
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-    <form action="add_event.php" method="post">
+    <form action="../../views/admin/add_event.php" method="post">
         Attendees: <input type="text" name="attendees" required><br>
         Nome Evento: <input type="text" name="nome_evento" required><br>
         Data Evento: <input type="date" name="data_evento" required><br>

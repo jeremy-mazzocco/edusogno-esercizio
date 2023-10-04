@@ -12,11 +12,11 @@
 
   <div>
 
-    <?php include 'db_connection.php';
+    <?php include './includes/db_connection.php';
     $token = $_GET['token'];
     ?>
 
-    <form action="save_new_password.php?token=<?php echo $token; ?>" method="post">
+    <form action="../handlers/save_new_password.php?token=<?php echo $token; ?>" method="post">
       Nuova Password: <input type="password" name="new_password" required>
       Conferma Password: <input type="password" name="confirm_password" required>
       <input type="submit" value="Reset Password">

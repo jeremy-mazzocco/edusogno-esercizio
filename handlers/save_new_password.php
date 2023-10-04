@@ -1,5 +1,5 @@
 <?php
-include 'db_connection.php';
+include '../includes/db_connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $token = $_GET["token"];
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $query = "UPDATE utenti SET password='$hashed_password', reset_token=NULL WHERE reset_token='$token'";
         mysqli_query($conn, $query);
 
-        echo "Password resettata con successo!" . '<br>' . '<p>Torna al <a href="index.php">Login</a></p>';
+        echo "Password resettata con successo!" . '<br>' . '<p>Torna al <a href="../index.php">Login</a></p>';
     } else {
         echo "Le password non corrispondono!";
     }

@@ -1,7 +1,7 @@
     <?php
     session_start();
 
-    include 'db_connection.php';
+    include '../includes/db_connection.php';
 
     $message = '';
 
@@ -30,7 +30,7 @@
             }
         }
 
-        header('Location: registration.php');
+        header('Location: ../views/registration.php');
         exit;
     }
 

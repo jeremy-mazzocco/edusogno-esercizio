@@ -1,6 +1,7 @@
 <?php
 
-include 'db_connection.php';
+include '../includes/db_connection.php';
+include '../views/events.php';
 
 // Login
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -40,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $_SESSION['events'] = $events;
 
-            header('Location: events.php');
+            header('Location: ../views/events.php');
             exit;
 
         } else {
