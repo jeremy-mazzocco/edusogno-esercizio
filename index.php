@@ -11,7 +11,7 @@
 <body>
 
     <div>
-        <h2>Login</h2>
+        <h2>Login</h2> <a href="./_admin/admin_dashboard.php">Vai all'area Admin</a>
 
         <form action="sql_login.php" method="post">
             Email: <input type="email" name="email" required><br><br>

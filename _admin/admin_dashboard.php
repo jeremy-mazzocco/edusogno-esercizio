@@ -19,6 +19,9 @@ $events = $eventController->getAllEvents();
 <body>
 
     <h1>Eventi</h1>
+    <div>
+        <a href="../index.php">Torna al Login</a>
+    </div>
     <a href="add_event.php">Aggiungi evento</a>
 
     <div>
