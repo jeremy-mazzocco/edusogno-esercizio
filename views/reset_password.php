@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/styles/style.css">
 
   <title>Reset Password</title>
@@ -93,11 +94,11 @@
       </div>
       <div class="layout-37">
         <div class="rectangle-9" id="accedi-rectangle-9">
-          <form action="../handlers/save_new_password.php?token=<?php echo $token; ?>" method="post" class="box_16">
+          <form action="../handlers/save_new_password.php?token=<?php echo $token; ?>" method="post" class="box_16" id="passwordForm">
 
-            <!-- Nuova Pasword -->
-            <p class="inserisci-lemail">Nuova Pasword</p>
-            <input class="name-example-com" type="password" name="new_password" required>
+            <!-- Nuova Password -->
+            <p class="inserisci-lemail">Nuova Password</p>
+            <input class="name-example-com" id="newPassword" type="password" name="new_password" required>
             <div class="line-3x"></div>
 
             <!-- Conferma password -->
@@ -105,13 +106,13 @@
               Conferma password
             </p>
             <div class="box_1">
-              <input class="name-example-com" type="password" name="confirm_password" required>
+              <input class="name-example-com" id="confirmPassword" type="password" name="confirm_password" required>
               <div class="vector">
                 <svg width="100%" height="100%" preserve-aspect-ratio="none" view-box="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
               </div>
             </div>
 
-            <!-- registrati -->
+            <!-- reset password -->
             <div class="line-2x"></div>
             <div class="rectangle-10 push-input" id="reset-password">
               <input class="registrati-1" type="submit" value="RESET PASSWORD">
@@ -142,6 +143,7 @@
   <path d="M 24.849 7.7 C 22.495 3.107 17.836 0 12.5 0 C 7.164 0 2.503 3.109 0.151 7.7 C 0.052 7.896 0 8.113 0 8.334 C 0 8.554 0.052 8.771 0.151 8.967 C 2.505 13.56 7.164 16.667 12.5 16.667 C 17.836 16.667 22.497 13.557 24.849 8.967 C 24.948 8.77 25 8.553 25 8.333 C 25 8.113 24.948 7.896 24.849 7.7 Z M 12.5 14.583 C 11.264 14.583 10.056 14.217 9.028 13.53 C 8 12.843 7.199 11.867 6.726 10.725 C 6.253 9.583 6.129 8.326 6.37 7.114 C 6.611 5.902 7.206 4.788 8.081 3.914 C 8.955 3.04 10.068 2.445 11.281 2.203 C 12.493 1.962 13.75 2.086 14.892 2.559 C 16.034 3.032 17.01 3.833 17.697 4.861 C 18.383 5.889 18.75 7.097 18.75 8.333 C 18.75 9.154 18.589 9.967 18.275 10.726 C 17.961 11.484 17.501 12.173 16.92 12.754 C 16.34 13.334 15.651 13.794 14.892 14.108 C 14.134 14.422 13.321 14.584 12.5 14.583 Z M 12.5 4.167 C 12.128 4.172 11.759 4.227 11.402 4.331 C 11.696 4.731 11.837 5.223 11.8 5.719 C 11.762 6.214 11.548 6.679 11.197 7.031 C 10.846 7.382 10.381 7.596 9.885 7.633 C 9.39 7.67 8.898 7.529 8.498 7.235 C 8.27 8.074 8.311 8.964 8.615 9.778 C 8.92 10.593 9.472 11.292 10.194 11.776 C 10.916 12.261 11.772 12.506 12.641 12.479 C 13.51 12.451 14.349 12.152 15.039 11.623 C 15.729 11.094 16.236 10.362 16.488 9.53 C 16.74 8.697 16.725 7.807 16.445 6.984 C 16.165 6.161 15.633 5.446 14.926 4.941 C 14.218 4.435 13.37 4.165 12.5 4.167 Z" fill="#0057FF" />
   </svg>
 
+  <script src="../assets/js/script.js"></script>
 
 </body>
 
