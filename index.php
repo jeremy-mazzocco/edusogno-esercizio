@@ -12,6 +12,12 @@
 </head>
 
 <body>
+<?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+?>
     <div class="main">
         <div class="container">
             <div class="layout-32">
@@ -109,7 +115,7 @@
                             </div>
                         </div>
 
-                        <!-- registrati -->
+                        <!-- login -->
                         <div class="line-2x"></div>
                         <div class="rectangle-10 push-input">
                             <input class="registrati-1" type="submit" value="ACCEDI">
@@ -120,7 +126,6 @@
                             Non hai ancora un profilo?
                             <a href="./views/registration.php"> Registrati</a>
                         </p>
-
                         <p class="hai-gi-un-account-text accedi-a">
                             Hai dimenticato la tua password?
                             <a href="./views/request_reset.php"> Resetta Password</a>
@@ -130,7 +135,6 @@
             </div>
             <div class="layout-38">
                 <p class="crea-il-tuo-account">Hai già un account?</p>
-
             </div>
             <div class="layout-39">
                 <div class="ellipse-2"></div>
