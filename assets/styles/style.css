@@ -562,7 +562,7 @@ ul {
     box-shadow: 0px 0px 0px 1px rgba(19, 64, 119, 1) inset;
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
-    height: 220px;
+    /* height: 220px; */
     width: 349px;
 }
 
@@ -580,12 +580,52 @@ ul {
     margin-bottom: 25px;
 }
 
+.text-evento {
+    color: rgb(72, 69, 69);
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.rectangle-edit {
+    border-radius: 8px;
+    background-color: rgb(253, 228, 0);
+    box-sizing: border-box;
+    height: 59px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rectangle-delete {
+    border-radius: 8px;
+    background-color: rgb(253, 0, 0);
+    box-sizing: border-box;
+    height: 59px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 #rectangle-join {
     border-radius: 8px;
     background-color: rgba(0, 87, 255, 1);
     box-sizing: border-box;
     height: 59px;
     width: 289px;
+}
+
+.text-decoration {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
 }
 
 #container-join {
@@ -623,7 +663,8 @@ ul {
 }
 
 .push-input {
-    width: 100%;
+    /* width: 100%; */
+    display: inline-block;
     border: none;
     outline: none;
     border-radius: 5px;
