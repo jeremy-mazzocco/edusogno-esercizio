@@ -461,9 +461,9 @@ ul {
     border-radius: 11px;
     margin-top: 57px;
     flex-grow: 1;
-    align-items: flex-end;
-    justify-content: flex-end;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 87, 255, 1);
     padding-right: 215px;
     padding-left: 256px;
@@ -528,7 +528,7 @@ ul {
 }
 
 .crea-il-tuo-account {
-    width: 320px;
+    /* width: 320px; */
     height: 32px;
     margin-right: auto;
     margin-left: auto;
@@ -613,6 +613,8 @@ ul {
 
 }
 
+
+
 #rectangle-join {
     border-radius: 8px;
     background-color: rgba(0, 87, 255, 1);
@@ -625,7 +627,16 @@ ul {
     text-decoration: none;
     color: white;
     text-align: center;
+}
 
+#text-aggiungi {
+    text-decoration: none;
+    background-color: rgb(132, 127, 180);
+    color: wheat;
+    margin-left: 15px;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 30px;
 }
 
 #container-join {
@@ -663,12 +674,10 @@ ul {
 }
 
 .push-input {
-    /* width: 100%; */
-    display: inline-block;
+    margin-top: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
 }
 

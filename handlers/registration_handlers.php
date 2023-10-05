@@ -1,4 +1,7 @@
+    
+    
     <?php
+    
     session_start();
 
     include '../includes/db_connection.php';
@@ -35,3 +38,5 @@
     }
 
     mysqli_close($conn);
+
+    ?>

@@ -112,12 +112,15 @@ $events = $eventController->getAllEvents();
                             <path d="M 27.817 11.6 L 24.656 12.764 L 32.243 33.363 L 35.404 32.199 L 27.817 11.6 Z" fill="#2D224C" />
                         </svg>
                     </div>
+                    <div class="area-admin">
+                        <a href="../../index.php">Torna alla Login</a>
+                    </div>
                 </div>
             </div>
             <div class="layout-37">
             </div>
             <div class="layout-38">
-                <p class="crea-il-tuo-account" id="eventi-title">Eventi</p>
+                <p class="crea-il-tuo-account" id="eventi-title">Tutti I     Tuoi Eventi <a id="text-aggiungi" href="add_event.php">Aggiungi evento</a></p>
             </div>
             <div class="layout-39">
                 <div class="ellipse-2"></div>
