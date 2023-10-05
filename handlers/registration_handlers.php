@@ -1,42 +1,38 @@
-    
-    
-    <?php
-    
-    session_start();
+<?php
 
-    include '../includes/db_connection.php';
+session_start();
 
-    $message = '';
+include '../includes/db_connection.php';
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$message = '';
 
-        $nome = mysqli_real_escape_string($conn, $_REQUEST["nome"]);
-        $cognome = mysqli_real_escape_string($conn, $_REQUEST["cognome"]);
-        $email = mysqli_real_escape_string($conn, $_REQUEST["email"]);
-        $password = $_REQUEST["password"];
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $checkEmail = "SELECT email FROM utenti WHERE email = '$email'";
-        $result = mysqli_query($conn, $checkEmail);
+    $nome = mysqli_real_escape_string($conn, $_REQUEST["nome"]);
+    $cognome = mysqli_real_escape_string($conn, $_REQUEST["cognome"]);
+    $email = mysqli_real_escape_string($conn, $_REQUEST["email"]);
+    $password = $_REQUEST["password"];
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        // bonus: controlla se la email é giá registrata
-        if (mysqli_num_rows($result) > 0) {
-            $_SESSION['message'] = "Email già registrata. Prova con un'altra e-mail.";
+    $checkEmail = "SELECT email FROM utenti WHERE email = '$email'";
+    $result = mysqli_query($conn, $checkEmail);
+
+    // bonus: controlla se la email é giá registrata
+    if (mysqli_num_rows($result) > 0) {
+        $_SESSION['message'] = "Email già registrata. Prova con un'altra e-mail.";
+    } else {
+
+        $query = "INSERT INTO utenti (nome, cognome, email, password) VALUES ('$nome', '$cognome', '$email', '$hashed_password')";
+
+        if (mysqli_query($conn, $query)) {
+            $_SESSION['message'] = "Utente registrato con successo!";
         } else {
-
-            $query = "INSERT INTO utenti (nome, cognome, email, password) VALUES ('$nome', '$cognome', '$email', '$hashed_password')";
-
-            if (mysqli_query($conn, $query)) {
-                $_SESSION['message'] = "Utente registrato con successo!";
-            } else {
-                $_SESSION['message'] = "Errore: " . mysqli_error($conn);
-            }
+            $_SESSION['message'] = "Errore: " . mysqli_error($conn);
         }
-
-        header('Location: ../views/registration.php');
-        exit;
     }
 
-    mysqli_close($conn);
+    header('Location: ../views/registration.php');
+    exit;
+}
 
-    ?>
+mysqli_close($conn);
